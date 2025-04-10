@@ -25,22 +25,22 @@
     <div class="form-container">
     <fieldset >
         <legend>Űrlap</legend>
-        <form action="" id="userform">
+        <form action="" id="userForm">
             <p>
                 <label for="">Vezetéknév:</label>
-                <input type="text" name="vezeteknev">
+                <input type="text" name="vezeteknev" required placeholder="Vezetéknév megadása..">
             </p>
             <p>
                 <label for="">Keresztknév:</label>
-                <input type="text" name="keresztknev">
+                <input type="text" name="keresztknev" required placeholder="Keresztknév megadása..">
             </p>
             <p>
                 <label for="">Email:</label>
-                <input type="text" name="email">
+                <input type="email" name="email" required placeholder="Email megadása..">
             </p>
             <p>
                 <label for="">Telefonszám:</label>
-                <input type="text" name="telefonszam">
+                <input type="tel" name="telefonszam" required placeholder="Telefonszám megadása..">
             </p>
             <p>
                 <button type="submit">Elküld</button>
@@ -61,7 +61,7 @@
 
                 </tr>
             </thead>
-            <tbody id="userstable"><!--Ide jönnek az adatok--></tbody>
+            <tbody id="usersTable"><!--Ide jönnek az adatok--></tbody>
         </table>
     </p>
 </div>
