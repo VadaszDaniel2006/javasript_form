@@ -7,6 +7,9 @@ document.getElementById('userForm').addEventListener('submit', (e) =>{
     const myFromData = new FormData(e.target);
     //Az űrlap adatait tároló objektum létrehozása    
     const userData = Object.fromEntries(myFromData);
-    console.log(userData);
+    console.log(userData)
+
+    const userJSON = JSON.stringify(userData,null,2);
+    localStorage.setItem('userDataKey', userJSON);
 
 })
